@@ -86,8 +86,6 @@ enum exception: ErrorType {
     case illegalInputException
 }
 
-typealias intTuples = (Int, Int);
-
 func tupleAdd (left: (Int, Int), right: (Int, Int)) -> (Int, Int) {
 //    guard left == (1, 1) else {
 //        throw exception.illegalInputException;
@@ -142,7 +140,7 @@ func dicAdd(left: Dictionary <String, Int>, right: Dictionary <String, Int>) -> 
     return result;
 }
 
-func dicSub(left: Dictionary <String, Double>, right: Dictionary <String, Double>) -> Dictionary <String, Double> {
+func dicSub(left: Dictionary <String, Int>, right: Dictionary <String, Int>) -> Dictionary <String, Int> {
     //    guard left == ["x": 1, "y": 1] else {
     //        throw exception.illegalInputException;
     //    }
@@ -173,7 +171,7 @@ var b = [
 
 print("\(dicAdd(a, right: b))");
 print("\(dicAdd(["x": 12, "y": 71], right: ["x": 18, "y": 90]))");
-//print("\(dicSub(a, right: b))");
+print("\(dicSub(a, right: b))");
 print("\(dicSub(["x": 12, "y": 71], right: ["x": 18, "y": 90]))");
 
 
