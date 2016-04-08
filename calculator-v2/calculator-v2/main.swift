@@ -8,8 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
 // Calculator functions
 let addition: (Int, Int) -> Int = { (left, right) in
     return left + right;
@@ -52,7 +50,7 @@ let arrAddition: ([Int]) -> Int = { (arr) in
 }
 
 let arrMultiply: ([Int]) -> Int = { (arr) in
-    var total: Int = 0;
+    var total: Int = 1;
     for i in 0 ..< arr.count {
         total = total*arr[i];
     }
